@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #464343;
+  font-family: Arial, Helvetica, sans-serif; /* update font family */
+}
+h2,
+p {
+  margin-bottom: 0;
+  width: 100%;
+  padding-left: 70px;
+  margin-bottom: 0px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+}
+.content {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  background-color: #e6e4e4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px black;
+}
+.b {
+  margin: 30px 10px 0px 10px;
+  width: 100px;
+  height: 50px;
+  background-color: #ad671b; /* light gray background */
+  color: wheat;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; /* larger font size */
+  box-shadow: 5px 5px 10px rgb(97, 67, 38); /* shadow for button */
+  transition: background-color 0.3s ease, color 0.3s ease; /* smooth transition for hover effect */
+  position: relative; /* for the ::after pseudo-element */
+}
+.b:hover {
+  background-color: #8b4703; /* lighter gray on hover */
+  /* color: black; change text color on hover */
+}
+.b:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+.price-rating {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  width: 100%;
+}
+.price-rating h2 {
+  margin-left: 35px;
+  padding: 0;
+}
+.price-rating .rating {
+  margin-top: 20px;
+  padding-right: 20px;
+}
