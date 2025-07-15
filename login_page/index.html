@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-tailwind</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box-shadow {
+            box-shadow: 10px 10px 20px black
+        }
+
+        /* input:active{
+           placeholder:
+        } */
+        .btn-primary {
+            box-shadow: 10px 10px 20px rgb(32, 32, 34);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+            box-shadow: 0px 0px 0px rgb(6, 6, 184);
+
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 flex justify-center items-center h-screen text-white">
+    <div class="bg-gray-700 p-8 rounded-lg shadow-lg box-shadow max-w-sm w-full">
+        <h1 class="text-3xl text-center mb-2.5 font-bold underline ">Login</h1>
+        <form action="">
+            <div class="mb-2.5">
+                <label class="mb-2.5 block" for="">Email:</label>
+                <input
+                    class="bg-gray-600 px-3 py-2  text-white rounded-md placeholder:text-gray-0 focus:outline-none w-full"
+                    type="email" name="" id="" placeholder="Email">
+            </div>
+            <div class="mb-2.5">
+                <label class="mb-2.5 block" for="">Password:</label>
+                <input
+                    class="bg-gray-600 px-3 py-2 text-white rounded-md placeholder:text-gray-0 focus:outline-none w-full"
+                    type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <button
+                class="btn-primary bg-blue-500 text-white px-4 py-2 rounded-md mb-2.5 mt-2.5 text-center w-full hover:bg-blue-600 cursor-pointer"
+                type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
